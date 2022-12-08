@@ -16,3 +16,20 @@
 
 `3-name` - A script that compiles a C file and creates an executable named `cisfun`.
 - The C file name will be saved in the variable `$CFILE`
+
+`4-puts.c` - A C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
+- Use the function `puts`
+- You are not allowed to use `printf`
+- program should end with the value `0`
+
+`5-printf.c` - A C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
+- Use the function `printf`
+- You are not allowed to use the function `puts`
+- program should return `0`
+- program should compile without warning when using the `-Wall gcc` option
+
+`6-size.c` - A C program that prints the size of various types on the computer it is compiled and run on.
+- You should produce the exact same output as in the example
+- Warnings are allowed
+- program should return `0`
+- You might have to install the package `libc6-dev-i386` on your Linux to test the `-m32 gcc` option
