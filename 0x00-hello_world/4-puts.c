@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry piont
+ * main - Entry point
  *
  * Prints some text
  * Return: Always 0 (Success)
