@@ -39,3 +39,6 @@
 
 `8-24_hours.c` - A function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
 - Prototype: `void jack_bauer(void);`
+
+`9-times_table.c` - A function that prints the 9 times table, starting with 0.
+- Prototype: `void times_table(void);`
