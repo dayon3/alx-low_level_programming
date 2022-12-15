@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_row - prints a single row of the times table
@@ -12,7 +13,9 @@ void print_row(int row)
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar('0' + row * i);
+		_putchar('0' + atoi(row * i));
+		_putchar(',');
+		_putchar(' ');
 	}
 	_putchar('\n');
 }
