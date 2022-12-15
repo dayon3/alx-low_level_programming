@@ -2,26 +2,21 @@
 /**
  * print_to_98 - prints all natural numbers from n to 98,
  * followed by a new line.
- * @n: integer
+ * @n: number to start counting at.
  *
- * Return: integer
+ * Return: void
  */
 void print_to_98(int n)
 {
 	if (n > 98)
 		for (; n > 98; n--)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n--);
 		}
 	else if (n < 98)
 		for (; n < 98; n++)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, " n++);
 		}
-	_putchar(n + '0');
-	_putchar('\n');
+	printf("\n", n);
 }
