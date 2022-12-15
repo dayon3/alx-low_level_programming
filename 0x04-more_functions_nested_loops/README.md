@@ -11,3 +11,7 @@
 - Returns `1` if `c` is a digit
 - Returns `0` otherwise
 - FYI: The standard library provides a similar function: `isdigit`. Run `man isdigit` to learn more.
+
+`2-mul.c` - A function that multiplies two integers.
+- Prototype: `int mul(int a, int b);`
+
