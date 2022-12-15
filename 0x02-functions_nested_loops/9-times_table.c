@@ -1,25 +1,4 @@
-#include <stdlib.h>
 #include "main.h"
-/**
- * print_row - prints a single row of the times table
- * @row: row number
- *
- * Return: void
- */
-
-void print_row(int row)
-{
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	{
-		_putchar('0' + atoi(row * i));
-		_putchar(',');
-		_putchar(' ');
-	}
-	_putchar('\n');
-}
-
 /**
  * times_table - prints the 9 times table, starting with 0.
  *
@@ -27,10 +6,26 @@ void print_row(int row)
  */
 void times_table(void)
 {
-	int i;
+	int num, mult, prod;
 
-	for (i = 0; i <= 9; i++)
+	for (num = 0; num <= 9; num++)
 	{
-		print_row(i);
+		_putchar('0');
+
+		for (mult = 1; mult <= 9; mult++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + '0');
+
+			_putchar((prod % 10) + '0');
+		}
+		_putchar('\n');
 	}
 }
