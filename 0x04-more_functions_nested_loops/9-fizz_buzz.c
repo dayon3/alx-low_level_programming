@@ -7,7 +7,7 @@
  * multiples of both three and five print `FizzBuzz`.
  */
 
-int main(void)
+void main(void)
 {
 	int i;
 
@@ -23,6 +23,4 @@ int main(void)
 			printf("%d ", i);
 	}
 	printf("\n");
-
-	return (0);
 }
