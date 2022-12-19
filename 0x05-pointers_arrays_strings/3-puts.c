@@ -6,7 +6,7 @@
  *
  * Return: void
  */
-void _puts(char *str);
+void _puts(char *str)
 {
 	size_t length = _strlen(str);
 
