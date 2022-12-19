@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -9,8 +8,8 @@
  */
 void _puts(char *str)
 {
-	size_t length = _strlen(str);
+	while (*str)
+		_putchar(*str++);
 
-	write(STDOUT_FILENO, str, length);
-	write(STDOUT_FILENO, "\n", 1);
+	_putchar('\n');
 }
