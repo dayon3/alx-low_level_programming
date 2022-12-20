@@ -8,12 +8,13 @@
  */
 void print_rev(char *s)
 {
-	if (*s == '\0')
-		return;
+	int strlen = 0, index;
 
-	print_rev(s + 1);
-	_putchar(*s);
+	while (s[index++])
+		strlen++;
 
-	if (*(s - 1) == '\0')
-		_putchar('\n');
+	for (index = strlen - 1; index >= 0; index--)
+		_putchar(s[index]);
+
+	_putchar('\n');
 }
