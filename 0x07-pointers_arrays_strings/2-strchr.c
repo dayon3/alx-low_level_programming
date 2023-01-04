@@ -5,8 +5,8 @@
  * @s: char
  * @c: char
  *
- * Return: pointer to the first occurrence of the 
- * character c in the string s, or NULL if the 
+ * Return: pointer to the first occurrence of the
+ * character c in the string s, or NULL if the
  * character is not found
  */
 
