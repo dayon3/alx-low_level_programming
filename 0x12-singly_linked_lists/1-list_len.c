@@ -8,7 +8,7 @@
  */
 size_t list_len(const list_t *h)
 {
-	count list_t *current;
+	const list_t *current;
 	unsigned int count;
 
 	current = h;
